@@ -5,26 +5,11 @@
 Console.WriteLine("Введите длину массива:  ");
 int n = Convert.ToInt32(Console.ReadLine());
 int[] mass = new int[n];
-zapolnenie(mass);
-PrintArray(mass);
-
-
-void zapolnenie(int[] mass)
+for (int i = 0; i < mass.Length; i++)
 {
-    for(int i = 0; i < n; i++)
-    {
-        mass[i] = new Random().Next(1,1000);
-    }
+    Console.Write($"Введите элемент массива {i}: ");
+    mass[i] = Convert.ToInt32 (Console.ReadLine());
 }
-void PrintArray(int[] mass)
-{
-    for(int i = 0; i < mass.Length; i++)
-    {
-        Console.Write(mass[i] + " ");
-    }
-        Console.WriteLine();
-}
-
 int sum = 0;
 for (int i = 0; i < mass.Length; i++)
 {
