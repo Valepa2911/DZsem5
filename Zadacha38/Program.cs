@@ -28,13 +28,9 @@ double Raznica (double[] mass)
 {
     double raz = 0;
     for (int i = 0; i < mass.Length; i++)
-    {if (min >= 0)
+    {
     raz = max - min;
-    }
-    
-    {if (min < 0)
-    raz = max + min;    
-    }
-    return raz;
+    }    
+        return raz;
 }
 Console.WriteLine($"Разница: {Raznica(mass)}");
